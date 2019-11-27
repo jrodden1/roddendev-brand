@@ -25,13 +25,13 @@ export default class Header extends React.Component {
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <Scrollspy className="navbar-nav"
-                           items={["about", "services", "portfolio", "contact"]}
+                           items={["why", "skills", "portfolio", "contact"]}
                            currentClassName="active" rootEl={"#mainNav"} offset={-75}>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#about" onClick={Scroller.handleAnchorScroll}>About</Nav.Link>
+                    <Nav.Link className={"js-scroll-trigger"} href="#why" onClick={Scroller.handleAnchorScroll}>Start with Why</Nav.Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#services" onClick={Scroller.handleAnchorScroll}>Services</Nav.Link>
+                    <Nav.Link className={"js-scroll-trigger"} href="#skills" onClick={Scroller.handleAnchorScroll}>Skills</Nav.Link>
                   </li>
                   <li className="nav-item">
                     <Nav.Link className={"js-scroll-trigger"} href="#portfolio" onClick={Scroller.handleAnchorScroll}>Portfolio</Nav.Link>
@@ -58,7 +58,7 @@ export default class Header extends React.Component {
                 <p className="text-white-75 font-weight-light mb-5"><span role="img" aria-label="hand waving hello">👋</span> Hi there! I'm Jeremiah. <br/><br/> I'm a web developer with a passion for developing software that helps people, 
                 is beautiful, and is easy to use. Keep scrolling or click on the button below to find out more!
                 </p>
-                <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about" onClick={Scroller.handleAnchorScroll}>Find Out More</a>
+                <a className="btn btn-primary btn-xl js-scroll-trigger" href="#why" onClick={Scroller.handleAnchorScroll}>Find Out More</a>
               </div>
             </div>
           </div>
