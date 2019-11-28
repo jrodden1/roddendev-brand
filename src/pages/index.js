@@ -2,11 +2,40 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
+import avatar from "../images/avatar.jpg"
+import jsLogo from "../images/jsLogo.svg"
+import rubyLogo from "../images/ruby.svg"
+import reactLogo from "../images/react.svg"
+import reduxLogo from "../images/redux.svg"
+import railsLogo from "../images/rails-no-words.svg"
+import appleLogo from "../images/apple.svg"
+import cssLogo from "../images/css3.svg"
+import htmlLogo from "../images/html5.svg"
+import sfLogo from "../images/salesforce.svg"
+import sqlLogo from "../images/database.svg"
+import shipdLogo from "../images/shipd.svg"
+import amLogo from "../images/amLogo.svg"
+import inventoriedLogo from "../images/inventoried.svg"
+import githubLogo from "../images/github.svg"
+import linkedInLogo from "../images/linkedInLogo.svg"
+
+// import createAndFix from "../images/create-and-fix.svg"
+// import growthMindset from "../images/growth-mindset.svg"
+// import onTarget from "../images/on-target.svg"
+// import teach from "../images/teach.svg"
+// import workingWithPeople from "../images/working-with-people.svg"
+import CreatorAndFixer from "../components/svg/CreatorAndFixer"
+import GrowthMindset from "../components/svg/GrowthMindset"
+import WorkWithPeople from "../components/svg/WorkWithPeople"
+import ReactBootstrap from "../components/svg/ReactBootstrap"
+import Teach from "../components/svg/Teach"
+
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -35,151 +64,191 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home"/>
-        <section className="page-section bg-primary" id="about">
+        <SEO title="RoddenDev"/>
+        <section className="page-section bg-primary" id="why">
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 text-center">
-                <h2 className="text-white mt-0">We've got what you need!</h2>
-                <hr className="divider light my-4"/>
-                <p className="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up
-                  and
-                  running in no time! Choose one of our open source, free to download, and easy to use themes! No
-                  strings
-                  attached!</p>
-                <a className="btn btn-light btn-xl js-scroll-trigger" href="#services"
-                   onClick={Scroller.handleAnchorScroll}>Get Started!</a>
+            <h2 className="text-center text-white">Let's start with Why</h2><br/>
+            <hr className="divider light my-4"/>
+            <h3 style={{paddingTop: "25px"}} className="text-center text-white-75">Why work with me?</h3><br/>
+            <div className="row">
+            <div className="col-lg-3 col-md-6 text-center">
+              <div className="mt-5">
+                  <WorkWithPeople />
+                  <h3 style={{paddingTop: "10px"}} className="h4 mb-2 text-white">People Knowledge</h3>
+                  <p className="text-white-75 mb-0">Not only am I technically proficient, but I'm emotionally intelligent too</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <CreatorAndFixer />
+                  <h3 className="h4 text-white mb-2">Creator & Fixer</h3>
+                  <p className="text-white-75 mb-0">I <em>love</em> creating new apps and features <strong><em>and</em></strong> squashing bugs</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <GrowthMindset />
+                  <h3 style={{paddingTop: "10px"}} className="h4 text-white mb-2">Growth Mindset</h3>
+                  <p className="text-white-75 mb-0">I embrace a <a style={{textDecoration: "underline"}} className="text-white-75" href="https://youtu.be/M1CHPnZfFmU">growth mindset</a> and <em>love</em> learning.</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <Teach />
+                  <h3 className="h4 mb-2 text-white">Good Teacher</h3>
+                  <p className="text-white-75 mb-0">I enjoy teaching others and translating tech-speak into laymen's terms</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="page-section" id="services">
+        <section className="page-section" id="skills">
           <div className="container">
-            <h2 className="text-center mt-0">At Your Service</h2>
+            <h2 style={{paddingBottom: "25px"}} className="text-center mt-0">Knowledgeable</h2>
             <hr className="divider my-4"/>
             <div className="row">
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-gem text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Sturdy Themes</h3>
-                  <p className="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                  <img 
+                    src={rubyLogo}
+                    style={{paddingBottom: "20px"}}
+                    alt="ruby logo"
+                  />
+                  <h3 className="h4 mb-2">Ruby</h3>
+                  <p className="text-muted mb-0">Ruby is a <em>gem</em> of a language </p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Up to Date</h3>
-                  <p className="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                  <img 
+                    src={railsLogo}
+                    style={{paddingBottom: "20px"}}
+                    alt="rails logo"
+                  />
+                  <h3 className="h4 mb-2">Rails</h3>
+                  <p className="text-muted mb-0">Worked with Rails 4 and 5</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-globe text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Ready to Publish</h3>
-                  <p className="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                  <img 
+                    src={jsLogo}
+                    style={{paddingBottom: "20px"}}
+                    alt="js logo"
+                  />
+                  <h3 className="h4 mb-2">JavaScript</h3>
+                  <p className="text-muted mb-0">JS makes things so wonderfully interactive</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
-                  <i className="fas fa-4x fa-heart text-primary mb-4"></i>
-                  <h3 className="h4 mb-2">Made with Love</h3>
-                  <p className="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                  <img 
+                    src={reactLogo}
+                    style={{paddingBottom: "10px"}}
+                    alt="react logo"
+                  />
+                  <h3 className="h4 mb-2">React</h3>
+                  <p className="text-muted mb-0">Components are wonderfully modular things</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    src={reduxLogo}
+                    style={{paddingBottom: "10px"}}
+                    alt="redux logo"
+                  />
+                  <h3 className="h4 mb-2">Redux</h3>
+                  <p className="text-muted mb-0">Helps my React Components share with one another</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    src={sqlLogo}
+                    style={{paddingBottom: "10px"}}
+                    alt="SQL logo"
+                  />
+                  <h3 className="h4 mb-2">SQL</h3>
+                  <p className="text-muted mb-0">Specifically used PostgreSQL AND SQLite Databases</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    src={htmlLogo}
+                    style={{paddingBottom: "10px"}}
+                    alt="HTML5 logo"
+                  />
+                  <h3 className="h4 mb-2">HTML5</h3>
+                  <p className="text-muted mb-0">Good ol' HTML</p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    src={cssLogo}
+                    style={{paddingBottom: "10px"}}
+                    alt="CSS3 logo"
+                  />
+                  <h3 className="h4 mb-2">CSS3</h3>
+                  <p className="text-muted mb-0">CSS makes things look good</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="portfolio">
-          <div className="container-fluid p-0">
-            <div className="row no-gutters">
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg" onClick={this.handlePortfolioClick.bind(this, 0)}>
-                  <Img fluid={this.props.data.images.edges[0].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
+        <section className="page-section bg-dark" id="portfolio">
+          <div className="container-fluid" style={{padding: "0px 100px"}}>
+            <h2 className="text-center text-white">Examples of My Work</h2><br/>
+            <hr className="divider light my-4"/>        
+            <div className="card-deck">
+              <div className="card" style={{border: "10px solid grey", minWidth: "3in", margin: "20px"}}>
+                <div className="header text-center">
+                  <img height="92px" className="card-img-top" src={shipdLogo} alt="Shipd Logo" style={{paddingTop: "30px"}} />
+                </div>
+                <div className="card-body">
+                  <p className="card-text">Shipd was built with a Print and Ship retail store or a small ebay business in mind.<br /><br />
+                  With Shipd, you can keep track of the packages processed and get reports on them.<br /><br />  
+                  <small>This is a demo site so feel free to create some packages and run some reports!</small></p>
+                </div>
+                <div className="card-footer bg-transparent">  
+                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.shipdsoft.net">Try It Out! </a>
+                </div>
               </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/2.jpg" onClick={this.handlePortfolioClick.bind(this, 1)}>
-                  <Img fluid={this.props.data.images.edges[1].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
+              <div className="card" style={{border: "10px solid grey", minWidth: "3in", margin: "20px"}}>
+                <div className="header text-center">
+                  <img height="100px" className="card-img-top" src={amLogo} alt="AutoMaintainer Logo" style={{paddingTop: "30px", paddingRight: "25px", paddingLeft: "25px"}} />
+                </div>
+                <div className="card-body">
+                  <p className="card-text">AutoMaintainer was created to help people keep track of maintenance done on vehicles in a quick simple way.<br /><br />
+
+                  With AutoMaintainer, you can create up vehicles and then associate maintenance events to them<br /><br />
+                  
+                  <small>This is a demo site so feel free to create some vehicles and some maintenance items!</small></p>
+                </div>
+                <div className="card-footer bg-transparent">
+                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.automaintainer.net">Try It Out! </a>
+                </div>
               </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/3.jpg" onClick={this.handlePortfolioClick.bind(this, 2)}>
-                  <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="images/portfolio/fullsize/4.jpg" onClick={this.handlePortfolioClick.bind(this, 3)}>
-                  <Img fluid={this.props.data.images.edges[3].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/5.jpg" onClick={this.handlePortfolioClick.bind(this, 4)}>
-                  <Img fluid={this.props.data.images.edges[4].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href="img/portfolio/fullsize/6.jpg" onClick={this.handlePortfolioClick.bind(this, 5)}>
-                  <Img fluid={this.props.data.images.edges[5].node.childImageSharp.fluid}/>
-                  <div className="portfolio-box-caption p-3">
-                    <div className="project-category text-white-50">
-                      Category
-                    </div>
-                    <div className="project-name">
-                      Project Name
-                    </div>
-                  </div>
-                </a>
+              <div className="card" style={{border: "10px solid grey", minWidth: "3in", margin: "20px"}}>
+                <div className="header text-center">
+                  <img height="95px" className="card-img-top" src={inventoriedLogo} alt="Inventoried Logo" style={{paddingTop: "30px", paddingRight: "20px", paddingLeft: "20px"}} />
+                </div>
+                <div className="card-body">
+                  <p className="card-text">Inventoried was designed to keep track of locations, items, and what all locations an item is stocked.<br /><br />
+
+                    With Inventoried, you can create up locations and add items to them.  You can also see the total number of an item across all your locations.<br /><br />
+                    
+                    <small>This is a demo site so feel free to create some locations and items!</small></p>            
+                </div>
+                <div className="card-footer bg-transparent">
+                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.inventoried.net">Try It Out!</a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="page-section bg-dark text-white">
-          <div className="container text-center">
-            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-            <a className="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
           </div>
         </section>
 
@@ -187,46 +256,50 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
+                
                 <h2 className="mt-0">Let's Get In Touch!</h2>
-                <hr className="divider my-4"/>
-                <p className="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an
-                  email
-                  and we will get back to you as soon as possible!</p>
+                <img 
+                  src={avatar} 
+                  alt="of Jeremiah" 
+                  style={{ borderRadius: "50%", height: "15rem", width: "15rem", padding: "20px" }}
+                />
+                
+                <p className="text-muted mb-5">Ready to start your next project with me? <br /><br /> Give me a call or send me an
+                  email <br /> and I'll get back to you as soon as possible!</p>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <div className="row" style={{marginBottom: "75px"}}>
+              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
                 <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
+                <div>+1 ‪(970) 833-1201‬</div>
               </div>
-              <div className="col-lg-4 mr-auto text-center">
+              <div className="col-lg-6 mr-auto text-center">
+                <img 
+                  src={linkedInLogo}
+                  alt="LinkedIn logo"
+                  style={{marginBottom: "16px"}}
+                />
+                <a className="d-block" href="https://www.linkedin.com/in/jeremiah-rodden">linkedin.com/in/jeremiah-rodden</a>
+              </div>
+            </div>
+            <div className="row" style={{marginBottom: "75px"}}>
+              <div className="col-lg-6 mr-auto text-center">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a className="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <a className="d-block" href="mailto:jrodden1.github@gmail.com">jrodden1.github@gmail.com</a>
+              </div>
+              <div className="col-lg-6 mr-auto text-center">
+                <img 
+                  className="text-muted"
+                  src={githubLogo}
+                  alt="github logo"
+                  style={{marginBottom: "16px"}}
+                />
+                <a className="d-block" href="https://github.com/jrodden1">github.com/jrodden1</a>
               </div>
             </div>
           </div>
         </section>
-        <PortfolioModal show={this.state.modalShow} onHide={() => this.setModal(false, 0)}>
-          <PortfolioCarousel images={this.props.data.images.edges} current={this.state.modalCurrent}/>
-        </PortfolioModal>
       </Layout>
     )
   }
 }
-
-
-export const imageData = graphql`
-  query {
-    images: allFile(filter: {relativePath: {glob: "portfolio/fullsize/*.jpg"}}, sort: {fields: name}) {
-      edges {
-        node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
