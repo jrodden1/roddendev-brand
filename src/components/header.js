@@ -51,7 +51,7 @@ export default class Header extends React.Component {
                 <div style={{fill: "white", paddingTop: "10px", paddingBottom: "30px"}}>
                   <Logo width="200px" height="200px" />
                 </div>  
-                <h1 className="text-uppercase text-white font-weight-bold">Full Stack Web Dev <br/>at your service!</h1>
+                <h1 className="text-uppercase text-white font-weight-bold">Full Stack Web Developer</h1>
                 <hr className="divider my-4"/>
               </div>
               <div className="col-lg-8 align-self-baseline">
