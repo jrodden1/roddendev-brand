@@ -1,14 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
-import PortfolioModal from "../components/portfolio/modal"
-import PortfolioCarousel from "../components/portfolio/carousel"
+
+//Avatar image
 import avatar from "../images/avatar.jpg"
+
+// Logo SVGs and Components
 import jsLogo from "../images/jsLogo.svg"
 import rubyLogo from "../images/ruby.svg"
 import reactLogo from "../images/react.svg"
@@ -17,24 +16,20 @@ import railsLogo from "../images/rails-no-words.svg"
 import appleLogo from "../images/apple.svg"
 import cssLogo from "../images/css3.svg"
 import htmlLogo from "../images/html5.svg"
-import sfLogo from "../images/salesforce.svg"
 import sqlLogo from "../images/database.svg"
 import shipdLogo from "../images/shipd.svg"
 import amLogo from "../images/amLogo.svg"
 import inventoriedLogo from "../images/inventoried.svg"
 import githubLogo from "../images/github.svg"
 import linkedInLogo from "../images/linkedInLogo.svg"
-
-// import createAndFix from "../images/create-and-fix.svg"
-// import growthMindset from "../images/growth-mindset.svg"
-// import onTarget from "../images/on-target.svg"
-// import teach from "../images/teach.svg"
-// import workingWithPeople from "../images/working-with-people.svg"
 import CreatorAndFixer from "../components/svg/CreatorAndFixer"
 import GrowthMindset from "../components/svg/GrowthMindset"
 import WorkWithPeople from "../components/svg/WorkWithPeople"
-import ReactBootstrap from "../components/svg/ReactBootstrap"
 import Teach from "../components/svg/Teach"
+// Logos for later
+// import sfLogo from "../images/salesforce.svg"
+// import ReactBootstrap from "../components/svg/ReactBootstrap"
+// import onTarget from "../images/on-target.svg"
 
 
 export default class IndexPage extends React.Component {
@@ -71,8 +66,8 @@ export default class IndexPage extends React.Component {
             <hr className="divider light my-4"/>
             <h3 style={{paddingTop: "25px"}} className="text-center text-white-75">Why work with me?</h3><br/>
             <div className="row">
-            <div className="col-lg-3 col-md-6 text-center">
-              <div className="mt-5">
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
                   <WorkWithPeople />
                   <h3 style={{paddingTop: "10px"}} className="h4 mb-2 text-white">People Knowledge</h3>
                   <p className="text-white-75 mb-0">Not only am I technically proficient, but I'm emotionally intelligent too</p>
@@ -201,7 +196,7 @@ export default class IndexPage extends React.Component {
         </section>
 
         <section className="page-section bg-dark" id="portfolio">
-          <div className="container-fluid" style={{paddingRight: "2rem", paddingLeft: "2rem"}}>
+          <div className="container">
             <h2 className="text-center text-white">Examples of My Work</h2><br/>
             <hr className="divider light my-4"/>        
             <div className="card-deck">
@@ -215,7 +210,7 @@ export default class IndexPage extends React.Component {
                   <small>This is a demo site so feel free to create some packages and run some reports!</small></p>
                 </div>
                 <div className="card-footer bg-transparent">  
-                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.shipdsoft.net">Try It Out! </a>
+                  <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.shipdsoft.net">Try It Out! </a>
                 </div>
               </div>
               <div className="card" style={{border: "10px solid grey", minWidth: "3in", margin: "20px"}}>
@@ -230,7 +225,7 @@ export default class IndexPage extends React.Component {
                   <small>This is a demo site so feel free to create some vehicles and some maintenance items!</small></p>
                 </div>
                 <div className="card-footer bg-transparent">
-                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.automaintainer.net">Try It Out! </a>
+                  <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.automaintainer.net">Try It Out! </a>
                 </div>
               </div>
               <div className="card" style={{border: "10px solid grey", minWidth: "3in", margin: "20px"}}>
@@ -245,7 +240,7 @@ export default class IndexPage extends React.Component {
                     <small>This is a demo site so feel free to create some locations and items!</small></p>            
                 </div>
                 <div className="card-footer bg-transparent">
-                  <a className="btn btn-dark btn-lg" target="_blank" style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.inventoried.net">Try It Out!</a>
+                  <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.inventoried.net">Try It Out!</a>
                 </div>
               </div>
             </div>
@@ -256,20 +251,16 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                
                 <h2 className="mt-0">Let's Get In Touch!</h2>
                 <img 
                   src={avatar} 
                   alt="of Jeremiah" 
                   style={{ borderRadius: "50%", height: "15rem", width: "15rem", margin: "20px" }}
                 />
-                
                 <p className="text-muted mb-5">Ready to start your next project with me? <br /><br /> Give me a call or send me an
                   email <br /> and I'll get back to you as soon as possible!</p>
               </div>
             </div>
-            
-            
             <div className="row">
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
@@ -284,7 +275,7 @@ export default class IndexPage extends React.Component {
                     alt="LinkedIn logo"
                     style={{marginBottom: "16px"}}
                   />
-                  <a className="d-block" href="https://www.linkedin.com/in/jrodden1">linkedin.com/in/jrodden1</a>
+                  <a className="d-block" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jrodden1">linkedin.com/in/jrodden1</a>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -301,7 +292,7 @@ export default class IndexPage extends React.Component {
                     alt="github logo"
                     style={{marginBottom: "16px"}}
                   />
-                  <a className="d-block" href="https://github.com/jrodden1">github.com/jrodden1</a>
+                  <a className="d-block" target="_blank" rel="noopener noreferrer"href="https://github.com/jrodden1">github.com/jrodden1</a>
                 </div>
               </div>
             </div>
