@@ -268,33 +268,41 @@ export default class IndexPage extends React.Component {
                   email <br /> and I'll get back to you as soon as possible!</p>
               </div>
             </div>
+            
+            
             <div className="row">
-              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
-                <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 ‪(970) 833-1201‬</div>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
+                  <div>+1 ‪(970) 833-1201‬</div>
+                </div>
               </div>
-              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
-                <img 
-                  src={linkedInLogo}
-                  alt="LinkedIn logo"
-                  style={{marginBottom: "16px"}}
-                />
-                <a className="d-block" href="https://www.linkedin.com/in/jeremiah-rodden">linkedin.com/in/jeremiah-rodden</a>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    src={linkedInLogo}
+                    alt="LinkedIn logo"
+                    style={{marginBottom: "16px"}}
+                  />
+                  <a className="d-block" href="https://www.linkedin.com/in/jrodden1">linkedin.com/in/jrodden1</a>
+                </div>
               </div>
-            </div>
-            <div className="row" >
-              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
-                <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a className="d-block" href="mailto:jrodden1.github@gmail.com">jrodden1.github@gmail.com</a>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                  <a className="d-block" href="mailto:jrodden1.github@gmail.com">jrodden1.github@gmail.com</a>
+                </div>
               </div>
-              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
-                <img 
-                  className="text-muted"
-                  src={githubLogo}
-                  alt="github logo"
-                  style={{marginBottom: "16px"}}
-                />
-                <a className="d-block" href="https://github.com/jrodden1">github.com/jrodden1</a>
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <img 
+                    className="text-muted"
+                    src={githubLogo}
+                    alt="github logo"
+                    style={{marginBottom: "16px"}}
+                  />
+                  <a className="d-block" href="https://github.com/jrodden1">github.com/jrodden1</a>
+                </div>
               </div>
             </div>
           </div>
