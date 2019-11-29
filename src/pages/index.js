@@ -201,7 +201,7 @@ export default class IndexPage extends React.Component {
         </section>
 
         <section className="page-section bg-dark" id="portfolio">
-          <div className="container-fluid" style={{padding: "0px 100px"}}>
+          <div className="container-fluid" style={{paddingRight: "2rem", paddingLeft: "2rem"}}>
             <h2 className="text-center text-white">Examples of My Work</h2><br/>
             <hr className="divider light my-4"/>        
             <div className="card-deck">
@@ -261,19 +261,19 @@ export default class IndexPage extends React.Component {
                 <img 
                   src={avatar} 
                   alt="of Jeremiah" 
-                  style={{ borderRadius: "50%", height: "15rem", width: "15rem", padding: "20px" }}
+                  style={{ borderRadius: "50%", height: "15rem", width: "15rem", margin: "20px" }}
                 />
                 
                 <p className="text-muted mb-5">Ready to start your next project with me? <br /><br /> Give me a call or send me an
                   email <br /> and I'll get back to you as soon as possible!</p>
               </div>
             </div>
-            <div className="row" style={{marginBottom: "75px"}}>
+            <div className="row">
               <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
                 <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
                 <div>+1 ‪(970) 833-1201‬</div>
               </div>
-              <div className="col-lg-6 mr-auto text-center">
+              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
                 <img 
                   src={linkedInLogo}
                   alt="LinkedIn logo"
@@ -282,12 +282,12 @@ export default class IndexPage extends React.Component {
                 <a className="d-block" href="https://www.linkedin.com/in/jeremiah-rodden">linkedin.com/in/jeremiah-rodden</a>
               </div>
             </div>
-            <div className="row" style={{marginBottom: "75px"}}>
-              <div className="col-lg-6 mr-auto text-center">
+            <div className="row" >
+              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
                 <a className="d-block" href="mailto:jrodden1.github@gmail.com">jrodden1.github@gmail.com</a>
               </div>
-              <div className="col-lg-6 mr-auto text-center">
+              <div className="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
                 <img 
                   className="text-muted"
                   src={githubLogo}
