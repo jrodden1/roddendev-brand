@@ -31,6 +31,26 @@ import Teach from "../components/svg/Teach"
 // import ReactBootstrap from "../components/svg/ReactBootstrap"
 // import onTarget from "../images/on-target.svg"
 
+/*
+Notes:
+Like to Add Education Section: 
+Flatiron School - with popup modal with the Best Bootcamp 2019 - 2020 
+DeVry University - with Popup modal talking about that I took Control systems tract 
+
+Other skills - Adobe After Effects, VoiceOver, 
+
+Would like to add a "I'm learning currently" section 
+Heroku
+AWS
+Bootstrap
+ReactBootstrap
+Greensock
+VMware ESXi
+
+Start Experimenting with Greensock animations on my site here.  
+I would also like to add a online / interactive version of my resume at some point.  
+*/
+
 
 export default class IndexPage extends React.Component {
   constructor(props) {
