@@ -13,7 +13,6 @@ import rubyLogo from "../images/ruby.svg"
 import reactLogo from "../images/react.svg"
 import reduxLogo from "../images/redux.svg"
 import railsLogo from "../images/rails-no-words.svg"
-import appleLogo from "../images/apple.svg"
 import cssLogo from "../images/css3.svg"
 import htmlLogo from "../images/html5.svg"
 import sqlLogo from "../images/database.svg"
@@ -26,7 +25,9 @@ import CreatorAndFixer from "../components/svg/CreatorAndFixer"
 import GrowthMindset from "../components/svg/GrowthMindset"
 import WorkWithPeople from "../components/svg/WorkWithPeople"
 import Teach from "../components/svg/Teach"
+
 // Logos for later
+// import appleLogo from "../images/apple.svg"
 // import sfLogo from "../images/salesforce.svg"
 // import ReactBootstrap from "../components/svg/ReactBootstrap"
 // import onTarget from "../images/on-target.svg"
@@ -85,19 +86,20 @@ export default class IndexPage extends React.Component {
             <h2 className="text-center text-white">Let's start with Why</h2><br/>
             <hr className="divider light my-4"/>
             <h3 style={{paddingTop: "25px"}} className="text-center text-white-75">Why work with me?</h3><br/>
+            
             <div className="row">
-              <div className="col-lg-3 col-md-6 text-center">
-                <div className="mt-5">
-                  <WorkWithPeople />
-                  <h3 style={{paddingTop: "10px"}} className="h4 mb-2 text-white">People Knowledge</h3>
-                  <p className="text-white-75 mb-0">Not only am I technically proficient, but I'm emotionally intelligent too</p>
-                </div>
-              </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
                   <CreatorAndFixer />
                   <h3 className="h4 text-white mb-2">Creator & Fixer</h3>
                   <p className="text-white-75 mb-0">I <em>love</em> creating new apps and features <strong><em>and</em></strong> squashing bugs</p>
+                </div>
+              </div>  
+              <div className="col-lg-3 col-md-6 text-center">
+                <div className="mt-5">
+                  <WorkWithPeople />
+                  <h3 style={{paddingTop: "10px"}} className="h4 mb-2 text-white">People Knowledge</h3>
+                  <p className="text-white-75 mb-0">Not only am I technically proficient, but I'm emotionally intelligent too</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -114,6 +116,12 @@ export default class IndexPage extends React.Component {
                   <p className="text-white-75 mb-0">I enjoy teaching others and translating tech-speak into laymen's terms</p>
                 </div>
               </div>
+            </div>
+            <div className="row justify-content-center">
+              <iframe title="Who's behind RoddenDev?" style={{border: "2px solid grey", borderRadius: "5px", padding: "2px", background: "grey", marginRight: "1rem", marginLeft: "1rem", marginTop: "3rem"}} width="560" height="315" src="https://www.youtube.com/embed/-rOkKl1k08Q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div className="row justify-content-center">
+              <a style={{margin: "3rem"}} className="btn btn-secondary btn-xl" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jrodden1">Checkout my background on Linkedin</a>
             </div>
           </div>
         </section>
@@ -186,7 +194,7 @@ export default class IndexPage extends React.Component {
                     alt="SQL logo"
                   />
                   <h3 className="h4 mb-2">SQL</h3>
-                  <p className="text-muted mb-0">Specifically used PostgreSQL AND SQLite Databases</p>
+                  <p className="text-muted mb-0">Specifically used PostgreSQL and SQLite Databases</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
@@ -227,7 +235,7 @@ export default class IndexPage extends React.Component {
                 <div className="card-body">
                   <p className="card-text">Shipd was built with a Print and Ship retail store or a small ebay business in mind.<br /><br />
                   With Shipd, you can keep track of the packages processed and get reports on them.<br /><br />  
-                  <small>This is a demo site so feel free to create some packages and run some reports!</small></p>
+                  <small>This is a demo site so feel free to input some packages and run some reports!</small></p>
                 </div>
                 <div className="card-footer bg-transparent">  
                   <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.shipdsoft.net">Try It Out! </a>
@@ -242,7 +250,7 @@ export default class IndexPage extends React.Component {
 
                   With AutoMaintainer, you can create up vehicles and then associate maintenance events to them<br /><br />
                   
-                  <small>This is a demo site so feel free to create some vehicles and some maintenance items!</small></p>
+                  <small>This is a demo site so feel free to input some vehicles and some maintenance items!</small></p>
                 </div>
                 <div className="card-footer bg-transparent">
                   <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.automaintainer.net">Try It Out! </a>
@@ -257,7 +265,7 @@ export default class IndexPage extends React.Component {
 
                     With Inventoried, you can create up locations and add items to them.  You can also see the total number of an item across all your locations.<br /><br />
                     
-                    <small>This is a demo site so feel free to create some locations and items!</small></p>            
+                    <small>This is a demo site so feel free to create an account and input some locations and items!</small></p>            
                 </div>
                 <div className="card-footer bg-transparent">
                   <a className="btn btn-dark btn-lg" target="_blank" rel="noopener noreferrer"style={{display: "block", marginLeft: "auto", marginRight: "auto"}} href="http://www.inventoried.net">Try It Out!</a>
@@ -277,8 +285,7 @@ export default class IndexPage extends React.Component {
                   alt="of Jeremiah" 
                   style={{ borderRadius: "50%", height: "15rem", width: "15rem", margin: "20px" }}
                 />
-                <p className="text-muted mb-5">Ready to start your next project with me? <br /><br /> Give me a call or send me an
-                  email <br /> and I'll get back to you as soon as possible!</p>
+                <p className="text-muted mb-5">Interested in working with me? <br /><br /> Reach out to me using one of the options below! </p>
               </div>
             </div>
             <div className="row">
@@ -301,7 +308,7 @@ export default class IndexPage extends React.Component {
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="mt-5">
                   <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                  <a className="d-block" href="mailto:jrodden1.github@gmail.com">jrodden1.github@gmail.com</a>
+                  <a className="d-block" href="mailto:roddendev@gmail.com">roddendev@gmail.com</a>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
