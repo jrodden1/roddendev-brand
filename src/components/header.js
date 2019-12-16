@@ -2,7 +2,6 @@ import React from "react"
 import Scrollspy from "react-scrollspy"
 import { Navbar, Nav } from "react-bootstrap"
 import Scroller from './scroller'
-import avatar from "../images/avatar.jpg"
 import Logo from './Logo.js'
 
 
@@ -55,8 +54,10 @@ export default class Header extends React.Component {
                 <hr className="divider my-4"/>
               </div>
               <div className="col-lg-8 align-self-baseline">
-                <p className="text-white-75 font-weight-light mb-5"><span role="img" aria-label="hand waving hello">👋</span> Hi there! I'm Jeremiah. <br/><br/> I'm a web developer with a passion for developing software that helps people, 
-                is beautiful, and is easy to use. Keep scrolling or click on the button below to find out more!
+                <p className="text-white-75 font-weight-light mb-5">
+                  <span role="img" aria-label="hand waving hello">👋</span> Hi there! I'm Jeremiah. <br/><br/> 
+                  I'm a web developer with a passion for developing quality software that helps people, 
+                  is beautiful, and is easy to use.  Keep scrolling or click on the button below to find out more!
                 </p>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#why" onClick={Scroller.handleAnchorScroll}>Find Out More</a>
               </div>
